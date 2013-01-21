@@ -1,0 +1,9 @@
+package proto;
+
+option java_package = "com.gromholl.proto";
+option java_outer_classname = "MessagePacket";
+
+message Message {
+  required string command = 1;
+  optional string argument = 2;
+}
